@@ -1,0 +1,48 @@
+# Module configuration
+module.tx_sokoban {
+	persistence {
+		storagePid = {$module.tx_sokoban.persistence.storagePid}
+		classes {
+			Tx_Sokoban_Domain_Model_Page {
+				newRecordStoragePid = {$module.tx_sokoban.persistence.storagePid}
+				mapping {
+					tableName = pages
+					columns {
+						title.mapOnProperty = title
+						TSconfig.mapOnProperty = tsConfig
+						pid.mapOnProperty = parentPage
+						backend_layout.mapOnProperty = backendLayout
+					}
+				}
+			}
+			Tx_Sokoban_Domain_Model_ContentElement {
+				newRecordStoragePid = {$module.tx_sokoban.persistence.storagePid}
+				mapping {
+					tableName = tt_content
+					columns {
+						header.mapOnProperty = title
+						CType.mapOnProperty = cType
+						colPos.mapOnProperty = colPos
+						pid.mapOnProperty = parentPage
+					}
+				}
+			}
+			Tx_Sokoban_Domain_Model_BackendLayout {
+				newRecordStoragePid = {$module.tx_sokoban.persistence.storagePid}
+				mapping {
+					tableName = backend_layout
+					columns {
+						title.mapOnProperty = title
+						config.mapOnProperty = config
+						pid.mapOnProperty = parentPage
+					}
+				}
+			}
+		}
+	}
+	view {
+		templateRootPath = {$module.tx_sokoban.view.templateRootPath}
+		partialRootPath = {$module.tx_sokoban.view.partialRootPath}
+		layoutRootPath = {$module.tx_sokoban.view.layoutRootPath}
+	}
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sokoban'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_sokoban_domain_model_page">Page</label>
+			<label index="tx_sokoban_domain_model_page.title">Title</label>
+			<label index="tx_sokoban_domain_model_page.ts_config">Ts Config</label>
+			<label index="tx_sokoban_domain_model_page.parent_page">Parent Page</label>
+			<label index="tx_sokoban_domain_model_page.backend_layout">Backend Layout</label>
+			<label index="tx_sokoban_domain_model_backendlayout">Backend Layout</label>
+			<label index="tx_sokoban_domain_model_backendlayout.title">Title</label>
+			<label index="tx_sokoban_domain_model_backendlayout.config">Config</label>
+			<label index="tx_sokoban_domain_model_backendlayout.parent_page">Parent Page</label>
+			<label index="tx_sokoban_domain_model_contentelement">Content Element</label>
+			<label index="tx_sokoban_domain_model_contentelement.title">Title</label>
+			<label index="tx_sokoban_domain_model_contentelement.parent_page">Parent Page</label>
+		</languageKey>
+	</data>
+</T3locallang>

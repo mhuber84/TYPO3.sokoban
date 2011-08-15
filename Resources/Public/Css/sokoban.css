@@ -1,0 +1,111 @@
+table.t3-page-columns,
+table.t3-gridTable {
+	width: auto;
+}
+.sokoban-skip-animation td.t3-gridCell,
+.sokoban-skip-animation td.t3-page-column {
+	max-width: 50px; min-width: 50px; overflow: hidden;
+}
+.sokoban-skip-animation td.t3-page-colHeader,
+.sokoban-skip-animation td.t3-row-header {
+	max-width: 50px; min-width: 50px; overflow: hidden;
+}
+.sokoban-skip-animation div.t3-page-colHeader,
+.sokoban-skip-animation div.t3-row-header {
+	margin: 0; padding: 0; width: 0; height: 0;
+}
+.sokoban-skip-animation div.t3-page-colHeader-icons {
+	opacity: 1; visibility: hidden; display: none;
+}
+.sokoban-skip-animation div.t3-page-colHeader-label {
+	opacity: 1; visibility: hidden; display: none;
+}
+.sokoban-skip-animation td.t3-gridCell div.t3-page-ce {
+	margin: 0; padding: 0;
+}
+.sokoban-skip-animation h4.t3-page-ce-header {
+	opacity: 1; visibility: hidden; display: none;
+}
+.sokoban-skip-animation div.t3-page-ce-body {
+	margin: 0; padding: 0; width: 50px; height: 50px;
+}
+.sokoban-skip-animation div.t3-page-ce div.t3-page-ce-type {
+	opacity: 1; visibility: hidden; display: none;
+}
+div.t3-page-ce div.sokoban-free,
+div.t3-page-ce.active div.sokoban-free {
+	background-color: transparent;
+}
+div.t3-page-ce div.sokoban-wall,
+div.t3-page-ce.active div.sokoban-wall {
+	background-color: #FF0000;
+}
+div.t3-page-ce div.sokoban-player,
+div.t3-page-ce.active div.sokoban-player {
+	background-color: #0000FF;
+}
+div.t3-page-ce div.sokoban-playergoal,
+div.t3-page-ce.active div.sokoban-playergoal {
+	background-color: #00AA99;
+}
+div.t3-page-ce div.sokoban-box,
+div.t3-page-ce.active div.sokoban-box {
+	background-color: #FFCC00;
+}
+div.t3-page-ce div.sokoban-boxgoal,
+div.t3-page-ce.active div.sokoban-boxgoal {
+	background-color: #00CC00;
+}
+div.t3-page-ce div.sokoban-goal,
+div.t3-page-ce.active div.sokoban-goal {
+	background-color: #CCFFCC;
+}
+
+.sokoban-left {
+	float: left;
+}
+.sokoban-right {
+	float: right;
+}
+.sokoban-clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.sokoban-clearfix {display:block;}
+
+#sokoban-controls {
+	width: 120px;
+}
+#sokoban-legend {
+	width: 110px;
+}
+#sokoban-legend div {
+	text-align: center;
+}
+
+#sokoban-controller {
+	position: relative;
+	width: 110px;
+	height: 110px;
+}
+#sokoban-controller a {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #7F7F7F;
+	text-align: center;
+}
+#sokoban-controller a.sokoban-controls-up {
+	top: 20px;
+	left: 40px;
+}
+#sokoban-controller a.sokoban-controls-right {
+	top: 50px;
+	right: 10px;
+}
+#sokoban-controller a.sokoban-controls-down {
+	bottom: 0;
+	left: 40px;
+}
+#sokoban-controller a.sokoban-controls-left {
+	top: 50px;
+	left: 10px;
+}

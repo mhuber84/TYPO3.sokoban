@@ -1,0 +1,42 @@
+<f:layout name="Default" />
+
+This template displays a NEW form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        New.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1><f:translate key="importLevels.title" /></h1>
+
+<f:flashMessages />
+
+<f:render partial="FormErrors" />
+
+<f:form method="post" action="create"  name="newPage" enctype="multipart/form-data">	
+	<label for="parentPageId" style="float: left; width: 100px;">
+		<f:translate key="tx_sokoban_domain_model_page.parentPage" />
+	</label>
+	<f:form.textbox name="parentPageId" id="parentPageId" size="10" /><br />
+	<f:translate key="tx_sokoban_domain_model_page.parentPage.help" /><br /><br />
+	
+	<label for="levelFile" style="float: left; width: 100px;">
+		<f:translate key="levelFile" />
+	</label>
+	<f:form.upload name="levelFile" id="levelFile" /><br />
+	<f:translate key="levelFile.help" /><br /><br />
+	
+	<label for="limit" style="float: left; width: 100px;">
+		<f:translate key="limit" />
+	</label>
+	<f:form.textbox name="limit" id="limit" size="10" /><br />
+	<f:translate key="limit.help" /><br /><br />
+	
+	<f:form.submit value="Create new" />
+</f:form>
+</f:section>

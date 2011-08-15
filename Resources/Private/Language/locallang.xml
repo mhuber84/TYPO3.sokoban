@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Sokoban extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="functionmenu.importLevels">Import Sokoban levels</label>
+			<label index="importLevels.title">Import Sokoban levels</label>
+			
+			<label index="tx_sokoban_domain_model_page.parentPage">Parent page:</label>			
+			<label index="levelFile">Level file:</label>
+			<label index="limit">Limit:</label>
+			<label index="tx_sokoban_domain_model_page.parentPage.help">(a page uid)</label>			
+			<label index="levelFile.help">(a level file as xml, f.e. from http://www.sourcecode.se/sokoban/levels.php)</label>
+			<label index="limit.help">(import x levels from file)</label>
+		</languageKey>
+	</data>
+</T3locallang>
