@@ -13,7 +13,7 @@
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Sokoban',
 	'description' => 'Play Sokoban in TYPO3',
-	'category' => '',
+	'category' => 'module',
 	'author' => 'Marco Huber',
 	'author_email' => 'mail@marco-huber.de',
 	'author_company' => '',
